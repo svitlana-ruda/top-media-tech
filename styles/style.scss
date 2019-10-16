@@ -265,6 +265,7 @@ h1 {
 	font-family: $helvetica;
 	font-size: 24px;
 	font-weight: 200;
+	transition: all 0.25s ease;
 	&:hover, &:focus {
 		color: $color;
 		text-decoration: underline;
@@ -604,3 +605,56 @@ h1 {
 ///////////////////////////////////////////////////////////////////////////////
 // Media queries //////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: 1199.98px) {
+	.form-spacing {
+		margin-top: 50%;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.img-headphone-1 {
+		position: absolute;
+		left: 38%;
+		top: -470px;
+	}
+	
+	.img-headphone-2 {
+		position: absolute;
+		right: 75%;
+		top: -90px;
+	}
+	
+	.img-headphone-3 {
+		position: absolute;
+		right: 45%;
+		bottom: 10%;
+		z-index: -1;
+	}
+
+	.product {
+		margin-right: 2rem;
+	}
+
+	.about-spacing {
+		margin-top: 12%;
+		margin-bottom: 1%;
+	}
+
+	.form-spacing {
+		margin-top: -9%;
+	}
+
+	.footer-spacing {
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	.fold-spacing {
+		margin-top: 2%;
+	}
+
+	.btn-send-spacing {
+		margin-top: -1%;
+	}
+}
