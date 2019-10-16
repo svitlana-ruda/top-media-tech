@@ -612,6 +612,9 @@ h1 {
   .btn-send-spacing {
     margin-top: -1%;
   }
+  .brands-spacing {
+    margin-top: 4%;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -645,7 +648,7 @@ h1 {
     font-size: 115px;
   }
   .product {
-    margin-right: 1.25rem;
+    margin-right: 1rem;
   }
   .contact {
     font-size: 77px;
@@ -681,6 +684,21 @@ h1 {
   }
   .brands-spacing {
     margin-top: 4%;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .navbar-brand {
+    font-size: 15px;
+  }
+  .product {
+    margin-right: 3px;
+  }
+  .about-us {
+    font-size: 105px;
+  }
+  .logo-img {
+    margin-bottom: 6%;
   }
 }
 /*# sourceMappingURL=style.css.map */
