@@ -133,6 +133,8 @@ html {
 body {
   background: #1d181a;
   color: #c69e78;
+  width: 100%;
+  height: 100%;
 }
 
 input[type=radio] {
@@ -360,6 +362,28 @@ h1 {
   }
 }
 
+canvas {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+#anim1 {
+  bottom: 325px;
+}
+
+#anim2 {
+  bottom: 375px;
+}
+
+#anim3 {
+  bottom: 80px;
+}
+
 .navbar {
   opacity: 0.91;
 }
@@ -508,13 +532,13 @@ h1 {
 .img-headphone-2 {
   position: absolute;
   right: 45%;
-  top: -120px;
+  top: -200px;
 }
 
 .img-headphone-3 {
   position: absolute;
   right: 65%;
-  bottom: 10%;
+  bottom: 25%;
   z-index: -1;
 }
 
@@ -529,18 +553,18 @@ h1 {
 }
 
 .solo-wireless {
-  margin-top: 10%;
+  margin-top: 7%;
   margin-bottom: 10%;
 }
 
 .about-spacing {
-  margin-top: 5%;
+  margin-top: -25%;
   margin-bottom: 1%;
 }
 
 .brands-spacing {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 
 .logo-img {
@@ -548,7 +572,7 @@ h1 {
 }
 
 .form-spacing {
-  margin-top: 20%;
+  margin-top: -85%;
 }
 
 .form-group {
@@ -557,15 +581,42 @@ h1 {
 }
 
 .footer-spacing {
-  margin-bottom: 7%;
+  margin-bottom: -1%;
+}
+
+.products-spacing {
+  margin-top: 5%;
+}
+
+.par-about-spacing {
+  margin-top: -8%;
+}
+
+.contact-us-spacing {
+  margin-top: -50%;
 }
 
 @media (max-width: 1199.98px) {
   .form-spacing {
-    margin-top: 50%;
+    margin-top: -100%;
   }
-  .about-spacing {
-    margin-top: 2%;
+  .products-spacing {
+    margin-top: -3%;
+  }
+  .par-about-spacing {
+    margin-top: -7%;
+  }
+  .brands-spacing {
+    margin-top: 3%;
+  }
+  #anim1 {
+    bottom: 250px;
+  }
+  #anim2 {
+    bottom: 325px;
+  }
+  #anim3 {
+    bottom: 65px;
   }
 }
 
@@ -573,13 +624,21 @@ h1 {
   .container {
     overflow: hidden;
   }
+  #anim1 {
+    bottom: 210px;
+  }
+  #anim2 {
+    bottom: 300px;
+  }
+  #anim3 {
+    bottom: 70px;
+  }
   .img-headphone-1 {
     position: absolute;
     left: 40%;
     top: -456px;
     max-width: 556px;
     max-height: 551px;
-    z-index: -1;
   }
   .img-headphone-2 {
     position: absolute;
@@ -596,15 +655,14 @@ h1 {
     margin-right: 2rem;
   }
   .about-spacing {
-    margin-top: 3%;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
   }
   .form-spacing {
     margin-top: -11%;
   }
   .footer-spacing {
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
   }
   .fold-spacing {
     margin-top: 2%;
@@ -618,6 +676,16 @@ h1 {
 }
 
 @media (max-width: 767.98px) {
+  #anim1 {
+    bottom: 240px;
+    z-index: -2;
+  }
+  #anim2 {
+    bottom: 800px;
+  }
+  #anim3 {
+    bottom: 65px;
+  }
   .img-headphone-1 {
     position: absolute;
     left: 40%;
@@ -628,7 +696,7 @@ h1 {
   }
   .img-headphone-2 {
     position: absolute;
-    right: 75%;
+    right: 85%;
     top: -220px;
     z-index: -1;
     max-width: 205.5px;
@@ -656,12 +724,22 @@ h1 {
   #contact-us {
     text-align: center;
   }
-  .about-spacing {
-    margin-bottom: 1%;
+  .contact-us-spacing {
+    margin-top: -25%;
   }
 }
 
 @media (max-width: 519.98px) {
+  #anim1 {
+    bottom: 220px;
+    z-index: -2;
+  }
+  #anim2 {
+    bottom: 775px;
+  }
+  #anim3 {
+    bottom: 75px;
+  }
   .img-headphone-1 {
     position: absolute;
     left: 40%;
@@ -697,11 +775,7 @@ h1 {
   }
   .footer-spacing {
     margin-top: 10%;
-    margin-bottom: 10%;
-  }
-  .about-spacing {
-    margin-top: 2%;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
   }
   .products-spacing {
     margin-top: -5%;
@@ -709,15 +783,22 @@ h1 {
   .par-about-spacing {
     margin-top: 8%;
   }
-  .contact-us-spacing {
-    margin-top: 5%;
-  }
   .brands-spacing {
     margin-top: 4%;
   }
 }
 
 @media (max-width: 374.98px) {
+  #anim1 {
+    bottom: 210px;
+    z-index: -2;
+  }
+  #anim2 {
+    bottom: 760px;
+  }
+  #anim3 {
+    bottom: 65px;
+  }
   .navbar-brand {
     font-size: 15px;
   }
