@@ -33,14 +33,7 @@ window.onload = function() {
                 amplitude: 10 * (i+1),
                 color: "#c69e78",
                 shift: 1 * (i+1), 
-                lineWidth: 0.5,
-                outline: true,
-                fill: false,
-                gradient: false,
-                origin: { x: 0, y: canvas.height/2 },
-                fixedStart: false,
-                fixedEnd: false,
-                damping: false
+                lineWidth: 0.5
             })
         );
     }
@@ -71,14 +64,7 @@ window.onload = function() {
                 amplitude: 30 * (i+1),
                 color: "#c69e78",
                 shift: 1 * (i+1), 
-                lineWidth: 0.5,
-                outline: true,
-                fill: false,
-                gradient: false,
-                origin: { x: 0, y: canvas.height/2 },
-                fixedStart: false,
-                fixedEnd: false,
-                damping: false
+                lineWidth: 0.5
             })
         );
     }
@@ -99,13 +85,7 @@ window.onload = function() {
                         color: "#c69e78",
                         shift: 1,
                         lineWidth: 0.5,
-                        outline: true,
-                        fill: false,
-                        gradient: false,
-                        origin: { x: 0, y: canvas.height/2 },
-                        fixedStart: false,
-                        fixedEnd: false,
-                        damping: false
+                        outline: true
                     });
 
     thirdwave.draw();
