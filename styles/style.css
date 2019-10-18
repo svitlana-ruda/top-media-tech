@@ -730,15 +730,18 @@ canvas {
 }
 
 @media (max-width: 519.98px) {
+  h1 {
+    font-size: 85px;
+  }
   #anim1 {
-    bottom: 235px;
+    bottom: 240px;
     z-index: -2;
   }
   #anim2 {
-    bottom: 815px;
+    bottom: 820px;
   }
   #anim3 {
-    bottom: 75px;
+    bottom: 80px;
   }
   .img-headphone-1 {
     position: absolute;
