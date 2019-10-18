@@ -10,84 +10,190 @@ $(document).ready(function(){
 window.onload = function() {
 
 
-    // First animation
+var waves = new SineWaves({
+    el: document.getElementById('anim1'),
     
-    var canvas = document.getElementById("anim1");
-    var context = canvas.getContext("2d");
-    var waveListFirst = [];
-
-    var drawFirst = function() {
-		window.requestAnimationFrame(drawFirst);
-		waveListFirst[0].clearCanvas();
-
-		for(var w of waveListFirst)
-			w.redraw();
-    }
+    speed: 1,
     
-    for(var i = 0; i < 5; i++) {
-        waveListFirst.push(
-            new Wave({
-                canvas: canvas,
-                frequency: 0.005,
-                phase: 30 * i, 
-                amplitude: 10 * (i+1),
-                color: "#c69e78",
-                shift: 1 * (i+1), 
-                lineWidth: 0.5
-            })
-        );
-    }
-
-    drawFirst();
-
-
-    // Second animation
-
-    var canvas = document.getElementById("anim2");
-    var context = canvas.getContext("2d");
-    var waveListSecond = [];
-
-    var drawSecond = function() {
-		window.requestAnimationFrame(drawSecond);
-		waveListSecond[0].clearCanvas();
-
-		for(var w of waveListSecond)
-			w.redraw();
-    }
+    width: function() {
+      return $(window).width();
+    },
     
-    for(var i = 0; i < 5; i++) {
-        waveListSecond.push(
-            new Wave({
-                canvas: canvas,
-                frequency: 0.003,
-                phase: 50 * i, 
-                amplitude: 30 * (i+1),
-                color: "#c69e78",
-                shift: 1 * (i+1), 
-                lineWidth: 0.5
-            })
-        );
+    // height: function() {
+    //   return $(window).height();
+    // },
+    
+    ease: 'SineInOut',
+    
+    wavesWidth: '70%',
+    
+    waves: [
+      {
+        timeModifier: 4,
+        lineWidth: 0.3,
+        amplitude: -25,
+        wavelength: 25
+      },
+      {
+        timeModifier: 2,
+        lineWidth: 0.3,
+        amplitude: -50,
+        wavelength: 50
+      },
+      {
+        timeModifier: 1,
+        lineWidth: 0.3,
+        amplitude: -100,
+        wavelength: 100
+      },
+      {
+        timeModifier: 0.5,
+        lineWidth: 0.3,
+        amplitude: -200,
+        wavelength: 200
+      },
+      {
+        timeModifier: 0.25,
+        lineWidth: 0.3,
+        amplitude: -400,
+        wavelength: 400
+      }
+    ],
+   
+    // Called on window resize
+    resizeEvent: function() {
+      var gradient = this.ctx.createLinearGradient(0, 0, this.width, 0);
+      gradient.addColorStop(0,"rgba(23, 210, 168, 0.2)");
+      gradient.addColorStop(0.5,"rgba(255, 255, 255, 0.5)");
+      gradient.addColorStop(1,"rgba(23, 210, 168, 0.2)");
+      
+      var index = -1;
+      var length = this.waves.length;
+        while(++index < length){
+        this.waves[index].strokeStyle = "#c69e78";
+      }
+      
+      // Clean Up
+      index = void 0;
+      length = void 0;
+      gradient = void 0;
     }
+  });
 
-    drawSecond();
+  var waves = new SineWaves({
+    el: document.getElementById('anim2'),
+    
+    speed: 1,
+    
+    width: function() {
+      return $(window).width();
+    },
+    
+    // height: function() {
+    //   return $(window).height();
+    // },
+    
+    ease: 'SineInOut',
+    
+    wavesWidth: '70%',
+    
+    waves: [
+      {
+        timeModifier: 4,
+        lineWidth: 0.3,
+        amplitude: -25,
+        wavelength: 25
+      },
+      {
+        timeModifier: 2,
+        lineWidth: 0.3,
+        amplitude: -50,
+        wavelength: 50
+      },
+      {
+        timeModifier: 1,
+        lineWidth: 0.3,
+        amplitude: -100,
+        wavelength: 100
+      },
+      {
+        timeModifier: 0.5,
+        lineWidth: 0.3,
+        amplitude: -200,
+        wavelength: 200
+      },
+      {
+        timeModifier: 0.25,
+        lineWidth: 0.3,
+        amplitude: -400,
+        wavelength: 400
+      }
+    ],
+   
+    // Called on window resize
+    resizeEvent: function() {
+      var gradient = this.ctx.createLinearGradient(0, 0, this.width, 0);
+      gradient.addColorStop(0,"rgba(23, 210, 168, 0.2)");
+      gradient.addColorStop(0.5,"rgba(255, 255, 255, 0.5)");
+      gradient.addColorStop(1,"rgba(23, 210, 168, 0.2)");
+      
+      var index = -1;
+      var length = this.waves.length;
+        while(++index < length){
+        this.waves[index].strokeStyle = "#c69e78";
+      }
+      
+      // Clean Up
+      index = void 0;
+      length = void 0;
+      gradient = void 0;
+    }
+  });
 
-
-    // Third animation
-
-    var canvas = document.getElementById("anim3");
-    var context = canvas.getContext("2d");
-
-    var thirdwave = new Wave({
-                        canvas: canvas,
-                        frequency: 0.01,
-                        phase: 90,
-                        amplitude: 20,
-                        color: "#c69e78",
-                        shift: 1,
-                        lineWidth: 0.5,
-                        outline: true
-                    });
-
-    thirdwave.draw();
+  var waves = new SineWaves({
+    el: document.getElementById('anim3'),
+    
+    speed: 1,
+    
+    width: function() {
+      return $(window).width();
+    },
+    
+    // height: function() {
+    //   return $(window).height();
+    // },
+    
+    ease: 'SineInOut',
+    
+    wavesWidth: '70%',
+    
+    waves: [
+      {
+        timeModifier: 4,
+        lineWidth: 0.3,
+        amplitude: -25,
+        wavelength: 35
+      }
+    ],
+   
+    // Called on window resize
+    resizeEvent: function() {
+      var gradient = this.ctx.createLinearGradient(0, 0, this.width, 0);
+      gradient.addColorStop(0,"rgba(23, 210, 168, 0.2)");
+      gradient.addColorStop(0.5,"rgba(255, 255, 255, 0.5)");
+      gradient.addColorStop(1,"rgba(23, 210, 168, 0.2)");
+      
+      var index = -1;
+      var length = this.waves.length;
+        while(++index < length){
+        this.waves[index].strokeStyle = "#c69e78";
+      }
+      
+      // Clean Up
+      index = void 0;
+      length = void 0;
+      gradient = void 0;
+    }
+  });
 
 }
