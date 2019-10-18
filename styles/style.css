@@ -373,11 +373,11 @@ canvas {
 }
 
 #anim1 {
-  bottom: 325px;
+  bottom: 360px;
 }
 
 #anim2 {
-  bottom: 375px;
+  bottom: 445px;
 }
 
 #anim3 {
@@ -613,10 +613,10 @@ canvas {
     bottom: 250px;
   }
   #anim2 {
-    bottom: 325px;
+    bottom: 400px;
   }
   #anim3 {
-    bottom: 65px;
+    bottom: 75px;
   }
 }
 
@@ -625,13 +625,13 @@ canvas {
     overflow: hidden;
   }
   #anim1 {
-    bottom: 210px;
+    bottom: 205px;
   }
   #anim2 {
-    bottom: 300px;
+    bottom: 335px;
   }
   #anim3 {
-    bottom: 70px;
+    bottom: 75px;
   }
   .img-headphone-1 {
     position: absolute;
@@ -677,11 +677,11 @@ canvas {
 
 @media (max-width: 767.98px) {
   #anim1 {
-    bottom: 240px;
+    bottom: 250px;
     z-index: -2;
   }
   #anim2 {
-    bottom: 800px;
+    bottom: 860px;
   }
   #anim3 {
     bottom: 65px;
@@ -731,11 +731,11 @@ canvas {
 
 @media (max-width: 519.98px) {
   #anim1 {
-    bottom: 220px;
+    bottom: 235px;
     z-index: -2;
   }
   #anim2 {
-    bottom: 775px;
+    bottom: 815px;
   }
   #anim3 {
     bottom: 75px;
@@ -743,7 +743,7 @@ canvas {
   .img-headphone-1 {
     position: absolute;
     left: 40%;
-    top: -395px;
+    top: -420px;
     z-index: -1;
     max-width: 370.5px;
     max-height: 367px;
@@ -786,6 +786,9 @@ canvas {
   .brands-spacing {
     margin-top: 4%;
   }
+  .par-fold {
+    margin-top: 10%;
+  }
 }
 
 @media (max-width: 374.98px) {
@@ -794,7 +797,7 @@ canvas {
     z-index: -2;
   }
   #anim2 {
-    bottom: 760px;
+    bottom: 820px;
   }
   #anim3 {
     bottom: 65px;
